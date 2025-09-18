@@ -519,3 +519,61 @@ body {
         margin-bottom: 20px;
     }
 }
+@media (max-width: 767px) {
+    /* Chỉnh sửa header và menu */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Chỉnh sửa các phần tử chính */
+    .san-pham h2, .gioi-thieu h2 {
+        font-size: 2rem;
+    }
+    
+    .card-container {
+        /* Chuyển từ lưới sang hiển thị 1 cột */
+        grid-template-columns: 1fr;
+    }
+
+    .gioi-thieu-content {
+        /* Hiển thị nội dung giới thiệu theo chiều dọc */
+        flex-direction: column;
+    }
+
+    .gioi-thieu-text, .gioi-thieu-img {
+        width: 100%;
+    }
+
+    /* Chỉnh sửa footer */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    
+    .socials, .contact-info {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .map-container {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
