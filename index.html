@@ -156,6 +156,16 @@ Với sự thấu hiểu sâu sắc về nhịp sống hiện đại, chúng tô
         }
         lastScrollY = window.scrollY;
     });
+     const navbarLinks = document.querySelectorAll('.navbar a');
+    const navbar = document.querySelector('.navbar');
+
+    navbarLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbar.classList.contains('active')) {
+                navbar.classList.remove('active');
+            }
+        });
+    });
     </script>
 </body>
 </html>
