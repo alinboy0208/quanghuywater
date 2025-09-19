@@ -340,6 +340,10 @@ body {
     .card-container {
         grid-template-columns: 1fr;
     }
+    .menu-icon {
+        display: block; 
+    }
+
     .two-image-section {
         flex-direction: column;
         align-items: center;
@@ -384,13 +388,12 @@ body {
         background-position: center;
          min-height: 60vh;
     }
-     .header .logo {
-        font-size: 40px;
-         text-align: center;
-        width: 100%; 
+    .header .logo {
+        font-size: 2rem;
+        margin-right: 15px;
     }
      body {
-         padding-top: 130px;
+         padding-top: 50px;
     }
     .overlay {
         position: absolute;
@@ -522,7 +525,6 @@ body {
     flex-wrap: wrap; 
 }
 .logo-image{
-    .logo-image 
     width: 300px; /* Điều chỉnh kích thước trên màn hình lớn */
     max-width: 100%; /* Đảm bảo logo không bị tràn */
     height: auto;
@@ -587,10 +589,11 @@ body {
     }
 
     /* Chỉnh sửa header và menu */
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
+  .header {
+        flex-direction: row; /* Sắp xếp theo hàng ngang */
+        justify-content: space-between; /* Đẩy logo và menu icon ra hai đầu */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        padding: 10px 20px;
     }
     .logo-image {
         width: 500px; /* Thu nhỏ logo trên điện thoại */
@@ -623,11 +626,21 @@ body {
         padding: 6px;
     }
 
-    .navbar {
+  .navbar {
+        display: none;
+        position: absolute;
+        top: 60px; /* Đặt dưới header */
+        left: 0;
         width: 100%;
+        background: linear-gradient(to right, #007BFF, #87CEEB); 
+        flex-direction: column;
         text-align: center;
-        margin-top: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+    .navbar.active {
+        display: flex;
+    }
+
 
     .navbar a {
         padding: 10px 0;
