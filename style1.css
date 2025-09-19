@@ -351,13 +351,54 @@ body {
     .image-wrapper.expanded {
         width: 100%;
     }
-    .main-content {
+    .overlay-content p {
+        font-size: 65px;  
+        margin-bottom: 20px;
+    }
+   .kv {
+        margin: 0;  
+        width: 100%;  
+        padding: 20px;  
+    }
+    .kv h2 {
+        font-size: 50px;  
+    }
+    .kv p {
+        font-size: 20px; 
+    }
+    
+    .kv h2, .kv p {
+        margin: 0;
+    }
+
+ .main-content {
         height: auto;
         min-height: 500px;
-        padding: 50px 20px;
         background-size: contain; 
         background-repeat: no-repeat;
         background-position: center;
+        position: relative;
+    }
+     body {
+        padding-top: 10px; /* Giảm khoảng cách để menu bar không bị thừa */
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px; /* Thêm padding để nội dung không bị dính vào lề */
+    }
+
+    /* Sửa font chữ nút Đặt hàng */
+    .btn-link {
+        font-size: 20px; /* Kích thước font chữ nhỏ hơn trên điện thoại */
+        padding: 10px 20px;
     }
 }
 @media (min-width: 768px) {
@@ -464,23 +505,25 @@ body {
 .footer {
      background: linear-gradient(to right, #007BFF, #87CEEB);
     color: #ffffff;
-      padding: 10px 100px 10px 10px;
+    padding: 50px 10px;
     display: flex;
-    justify-content: flex-end; 
-    align-items: center;
-    text-align: right; 
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap; 
 }
-.logo-image {
-    width: 600px; /* Điều chỉnh kích thước logo theo ý bạn */
+.logo-image{
+    .logo-image 
+    width: 300px; /* Điều chỉnh kích thước trên màn hình lớn */
+    max-width: 100%; /* Đảm bảo logo không bị tràn */
     height: auto;
-    margin-right: auto;
-    margin-left: 20px; /* Thêm khoảng cách 20px ở phía trái */
-}
-
-.footer-content {
+    margin: 20px 0;
+    }
+.footer-contact, .footer-content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    text-align: right;
+    width: auto; /* Giúp các khối nội dung không bị tràn */
 }
 
 .social-links {
@@ -532,13 +575,16 @@ body {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-}
-@media (max-width: 767px) {
+
     /* Chỉnh sửa header và menu */
     .header {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
+    }
+    .logo-image {
+        width: 500px; /* Thu nhỏ logo trên điện thoại */
+        margin: 20px 0;
     }
         .footer-contact {
         align-items: center; 
@@ -546,20 +592,23 @@ body {
         margin-bottom: 20px;
     }
     .logo-with-socials-container {
-        position: relative; 
-        width: 150px; 
+        display: flex; /* Bật flexbox */
+        flex-direction: column; /* Xếp logo và icon theo chiều dọc */
+        align-items: center; /* Căn giữa chúng theo chiều ngang */
         margin-bottom: 20px;
     }
-    .socials-overlay {
-        position: absolute;
-        bottom: 10px; 
-        left: 50%;
-        transform: translateX(-50%); 
+   .socials-overlay {
+        position: absolute; /* Dòng này rất quan trọng: đưa về vị trí bình thường */
+        bottom: auto;
+        left: auto;
+        transform: none; /* Bỏ transform để tránh xung đột */
         display: flex;
         gap: 15px;
+        justify-content: center; /* Căn giữa các icon */
     }
+  
 
-    .socials-overlay .social-icon {
+     .socials-overlay .social-icon {
         font-size: 20px;
         padding: 6px;
     }
@@ -595,14 +644,18 @@ body {
     }
 
     /* Chỉnh sửa footer */
-    .footer {
+    footer {
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Căn giữa toàn bộ phần tử con */
         padding: 40px 20px;
     }
     
     .socials, .contact-info {
         margin-bottom: 20px;
+        text-align: center;
+    }
+    .social-links, .contact-info {
+        justify-content: center; /* Căn giữa nội dung trên điện thoại */
         text-align: center;
     }
 
