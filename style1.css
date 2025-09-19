@@ -356,7 +356,7 @@ body {
         width: 100%;
     }
     .overlay-content p {
-        font-size: 65px;  
+        font-size: 60px;  
         margin-bottom: 20px;
     }
    .kv {
@@ -375,7 +375,7 @@ body {
         margin: 0;
     }
     .image-overlay-text p{
-        font-size: 20px;
+        font-size: 10px;
     }
     
 
@@ -386,14 +386,15 @@ body {
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center;
-         min-height: 60vh;
+         min-height: 50vh;
+
     }
     .header .logo {
         font-size: 2rem;
         margin-right: 15px;
     }
      body {
-         padding-top: 50px;
+         padding-top: 90px;
     }
     .overlay {
         position: absolute;
@@ -410,8 +411,8 @@ body {
 
     /* Sửa font chữ nút Đặt hàng */
     .btn-link {
-        font-size: 20px; /* Kích thước font chữ nhỏ hơn trên điện thoại */
-        padding: 10px 20px;
+        font-size: 18px; /* Kích thước font chữ nhỏ hơn trên điện thoại */
+        padding: 8px 16px;
     }
 }
 @media (min-width: 768px) {
