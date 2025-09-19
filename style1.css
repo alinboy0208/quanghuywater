@@ -370,15 +370,15 @@ body {
     .kv h2, .kv p {
         margin: 0;
     }
-
- .main-content {
-        height: auto;
-        min-height: 500px;
-        background-size: contain; 
+.main-content {
+        position: relative;
+        height: auto; 
+        padding: 80px 20px; 
+        background-size: cover; 
         background-repeat: no-repeat;
         background-position: center;
-        position: relative;
     }
+
      body {
         padding-top: 10px; /* Giảm khoảng cách để menu bar không bị thừa */
     }
@@ -666,3 +666,4 @@ body {
         width: 100%;
     }
 }
+
