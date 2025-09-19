@@ -351,6 +351,14 @@ body {
     .image-wrapper.expanded {
         width: 100%;
     }
+    .main-content {
+        height: auto;
+        min-height: 500px;
+        padding: 50px 20px;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 @media (min-width: 768px) {
     .menu-icon {
@@ -454,13 +462,19 @@ body {
   min-height: 05vh; 
 }
 .footer {
-    background: url('nền\ cuối.png') no-repeat center center/cover;
+     background: linear-gradient(to right, #007BFF, #87CEEB);
     color: #ffffff;
       padding: 10px 100px 10px 10px;
     display: flex;
     justify-content: flex-end; 
     align-items: center;
     text-align: right; 
+}
+.logo-image {
+    width: 600px; /* Điều chỉnh kích thước logo theo ý bạn */
+    height: auto;
+    margin-right: auto;
+    margin-left: 20px; /* Thêm khoảng cách 20px ở phía trái */
 }
 
 .footer-content {
@@ -526,6 +540,29 @@ body {
         align-items: flex-start;
         padding: 10px;
     }
+        .footer-contact {
+        align-items: center; 
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .logo-with-socials-container {
+        position: relative; 
+        width: 150px; 
+        margin-bottom: 20px;
+    }
+    .socials-overlay {
+        position: absolute;
+        bottom: 10px; 
+        left: 50%;
+        transform: translateX(-50%); 
+        display: flex;
+        gap: 15px;
+    }
+
+    .socials-overlay .social-icon {
+        font-size: 20px;
+        padding: 6px;
+    }
 
     .navbar {
         width: 100%;
@@ -576,4 +613,3 @@ body {
         width: 100%;
     }
 }
-
