@@ -370,17 +370,27 @@ body {
     .kv h2, .kv p {
         margin: 0;
     }
-.main-content {
+    .image-overlay-text p{
+        font-size: 20px;
+    }
+    
+
+  .main-content {
         position: relative;
         height: auto; 
-        padding: 80px 20px; 
+        padding: 80px 20px; /* Thêm padding trên và dưới để tạo chiều cao linh hoạt */
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center;
+         min-height: 60vh;
     }
-
+     .header .logo {
+        font-size: 40px;
+         text-align: center;
+        width: 100%; 
+    }
      body {
-        padding-top: 10px; /* Giảm khoảng cách để menu bar không bị thừa */
+         padding-top: 130px;
     }
     .overlay {
         position: absolute;
@@ -666,4 +676,3 @@ body {
         width: 100%;
     }
 }
-
