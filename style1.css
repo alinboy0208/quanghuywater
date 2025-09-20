@@ -375,7 +375,7 @@ body {
         margin: 0;
     }
     .image-overlay-text p{
-        font-size: 10px;
+        font-size: 20px;
     }
     
 
@@ -394,7 +394,7 @@ body {
         margin-right: 15px;
     }
      body {
-         padding-top: 90px;
+         padding-top: 80px;
     }
     .overlay {
         position: absolute;
@@ -690,4 +690,3 @@ body {
         width: 100%;
     }
 }
-
