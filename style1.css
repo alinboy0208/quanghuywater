@@ -38,6 +38,10 @@ body {
 .header.hidden-header {
     transform: translateY(-100%);
 }
+.footer .logo-image {
+    width: 600px; 
+    height: auto;
+}
 
 .menu-icon {
     font-size: 30px;
@@ -692,6 +696,7 @@ body {
         width: 100%;
     }
 }
+
 
 
 
