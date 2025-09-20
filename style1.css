@@ -395,7 +395,8 @@ body {
     }
      body {
          padding-top: 80px;
-        font-family: 'Bahnschrift Condensed';
+        font-family: 'Bahnschrift Condensed', 'Arial Narrow', sans-serif;
+}
     }
     .overlay {
         position: absolute;
@@ -691,5 +692,6 @@ body {
         width: 100%;
     }
 }
+
 
 
