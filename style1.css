@@ -382,7 +382,7 @@ body {
   .main-content {
         position: relative;
         height: auto; 
-        padding: 80px 20px; /* Thêm padding trên và dưới để tạo chiều cao linh hoạt */
+        padding: 80px 20px; 
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center;
@@ -406,12 +406,12 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px; /* Thêm padding để nội dung không bị dính vào lề */
+        padding: 10px;
     }
 
-    /* Sửa font chữ nút Đặt hàng */
+
     .btn-link {
-        font-size: 18px; /* Kích thước font chữ nhỏ hơn trên điện thoại */
+        font-size: 18px; 
         padding: 8px 16px;
     }
 }
@@ -526,8 +526,8 @@ body {
     flex-wrap: wrap; 
 }
 .logo-image{
-    width: 300px; /* Điều chỉnh kích thước trên màn hình lớn */
-    max-width: 100%; /* Đảm bảo logo không bị tràn */
+    width: 300px; 
+    max-width: 100%; 
     height: auto;
     margin: 20px 0;
     }
@@ -536,7 +536,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    width: auto; /* Giúp các khối nội dung không bị tràn */
+    width: auto; 
 }
 
 .social-links {
@@ -589,15 +589,15 @@ body {
         margin-bottom: 20px;
     }
 
-    /* Chỉnh sửa header và menu */
+   
   .header {
-        flex-direction: row; /* Sắp xếp theo hàng ngang */
-        justify-content: space-between; /* Đẩy logo và menu icon ra hai đầu */
-        align-items: center; /* Căn giữa theo chiều dọc */
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
         padding: 10px 20px;
     }
     .logo-image {
-        width: 500px; /* Thu nhỏ logo trên điện thoại */
+        width: 500px; 
         margin: 20px 0;
     }
         .footer-contact {
@@ -606,19 +606,19 @@ body {
         margin-bottom: 20px;
     }
     .logo-with-socials-container {
-        display: flex; /* Bật flexbox */
-        flex-direction: column; /* Xếp logo và icon theo chiều dọc */
-        align-items: center; /* Căn giữa chúng theo chiều ngang */
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
         margin-bottom: 20px;
     }
    .socials-overlay {
-        position: absolute; /* Dòng này rất quan trọng: đưa về vị trí bình thường */
+        position: absolute; 
         bottom: auto;
         left: auto;
-        transform: none; /* Bỏ transform để tránh xung đột */
+        transform: none; 
         display: flex;
         gap: 15px;
-        justify-content: center; /* Căn giữa các icon */
+        justify-content: center;
     }
   
 
@@ -630,7 +630,7 @@ body {
   .navbar {
         display: none;
         position: absolute;
-        top: 60px; /* Đặt dưới header */
+        top: 60px; 
         left: 0;
         width: 100%;
         background: linear-gradient(to right, #007BFF, #87CEEB); 
@@ -648,18 +648,18 @@ body {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    /* Chỉnh sửa các phần tử chính */
+    
     .san-pham h2, .gioi-thieu h2 {
         font-size: 2rem;
     }
     
     .card-container {
-        /* Chuyển từ lưới sang hiển thị 1 cột */
+       
         grid-template-columns: 1fr;
     }
 
     .gioi-thieu-content {
-        /* Hiển thị nội dung giới thiệu theo chiều dọc */
+       
         flex-direction: column;
     }
 
@@ -667,10 +667,10 @@ body {
         width: 100%;
     }
 
-    /* Chỉnh sửa footer */
+  
     footer {
         flex-direction: column;
-        align-items: center; /* Căn giữa toàn bộ phần tử con */
+        align-items: center; 
         padding: 40px 20px;
     }
     
@@ -679,7 +679,7 @@ body {
         text-align: center;
     }
     .social-links, .contact-info {
-        justify-content: center; /* Căn giữa nội dung trên điện thoại */
+        justify-content: center; 
         text-align: center;
     }
 
@@ -690,3 +690,4 @@ body {
         width: 100%;
     }
 }
+
