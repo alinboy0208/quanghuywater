@@ -391,7 +391,7 @@ body {
         background-repeat: no-repeat;
         background-position: center;
          min-height: 50vh;
-         background-position: right 20% center; 
+         background-position: right 21% center; 
 
     }
     .header .logo {
@@ -697,6 +697,7 @@ body {
         width: 100%;
     }
 }
+
 
 
 
