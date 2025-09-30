@@ -367,6 +367,7 @@ body {
         margin: 0;  
         width: 100%;  
         padding: 20px;  
+        border: 4px dashed #000;
     }
     .kv h2 {
         font-size: 50px;  
@@ -697,6 +698,7 @@ body {
         width: 100%;
     }
 }
+
 
 
 
