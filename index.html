@@ -151,10 +151,10 @@ Với sự thấu hiểu sâu sắc về nhịp sống hiện đại, chúng tô
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > lastScrollY && window.scrollY > 100) {
-            // Đang cuộn xuống và đã cuộn qua 100px từ trên cùng
+            
             document.querySelector('.header').classList.add('hidden-header');
         } else {
-            // Đang cuộn lên
+            
             document.querySelector('.header').classList.remove('hidden-header');
         }
         lastScrollY = window.scrollY;
