@@ -38,10 +38,6 @@ body {
 .header.hidden-header {
     transform: translateY(-100%);
 }
-.footer .logo-image {
-    width: 600px; 
-    height: auto;
-}
 
 .menu-icon {
     font-size: 30px;
@@ -125,7 +121,6 @@ body {
     color: white;
     text-align: left;
 }
-
 .overlay-content p {
     font-size: 100px;
     margin-bottom: 30px;
@@ -316,7 +311,10 @@ body {
     transform: translateY(20px);
 
 }
-
+.footer .logo-image {
+    width: 600px; 
+    height: auto;
+}
 .image-overlay-text h2 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -336,8 +334,17 @@ body {
 }
 
 .image-wrapper.expanded .image-overlay-text {
-    opacity: 1;
+    opacity: 1; 
     transform: translateY(0);
+}
+.footer-copyright {
+    text-align: center;
+    color: #cccccc;
+    font-size: 20px; 
+    padding: 20px 30px 05px;
+    width: 100%; 
+    border-top: 3px dashed rgba(255, 255, 255, 0.1); 
+    margin-top: 30px;
 }
 
 @media (max-width: 767px) {
@@ -347,7 +354,11 @@ body {
     .menu-icon {
         display: block; 
     }
-
+    .footer-copyright {
+        font-size: 0.75rem;
+        padding: 15px 20px 5px; 
+        margin-top: 5px;
+    }
     .two-image-section {
         flex-direction: column;
         align-items: center;
@@ -366,8 +377,8 @@ body {
    .kv {
         margin: 0;  
         width: 100%;  
-        padding: 20px;  
-        border: 4px dashed #000;
+        padding: 10px;  
+         border: 4px dashed #000;
     }
     .kv h2 {
         font-size: 50px;  
@@ -387,12 +398,12 @@ body {
   .main-content {
         position: relative;
         height: auto; 
-        padding: 80px 20px; 
+        padding: 80px 20px; /* Thêm padding trên và dưới để tạo chiều cao linh hoạt */
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center;
          min-height: 50vh;
-         background-position: right 21% center; 
+          background-position: right 25% center; 
 
     }
     .header .logo {
@@ -401,8 +412,7 @@ body {
     }
      body {
          padding-top: 80px;
-        font-family: 'Bahnschrift Condensed', 'Arial Narrow', sans-serif;
-}
+         font-family: 'Bahnschrift Condensed';
     }
     .overlay {
         position: absolute;
@@ -414,12 +424,12 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 10px; /* Thêm padding để nội dung không bị dính vào lề */
     }
 
-
+    /* Sửa font chữ nút Đặt hàng */
     .btn-link {
-        font-size: 18px; 
+        font-size: 18px; /* Kích thước font chữ nhỏ hơn trên điện thoại */
         padding: 8px 16px;
     }
 }
@@ -534,8 +544,8 @@ body {
     flex-wrap: wrap; 
 }
 .logo-image{
-    width: 300px; 
-    max-width: 100%; 
+    width: 300px; /* Điều chỉnh kích thước trên màn hình lớn */
+    max-width: 100%; /* Đảm bảo logo không bị tràn */
     height: auto;
     margin: 20px 0;
     }
@@ -544,7 +554,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    width: auto; 
+    width: auto; /* Giúp các khối nội dung không bị tràn */
 }
 
 .social-links {
@@ -597,15 +607,15 @@ body {
         margin-bottom: 20px;
     }
 
-   
+    /* Chỉnh sửa header và menu */
   .header {
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: center;
+        flex-direction: row; /* Sắp xếp theo hàng ngang */
+        justify-content: space-between; /* Đẩy logo và menu icon ra hai đầu */
+        align-items: center; /* Căn giữa theo chiều dọc */
         padding: 10px 20px;
     }
     .logo-image {
-        width: 500px; 
+        width: 500px; /* Thu nhỏ logo trên điện thoại */
         margin: 20px 0;
     }
         .footer-contact {
@@ -614,19 +624,19 @@ body {
         margin-bottom: 20px;
     }
     .logo-with-socials-container {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
+        display: flex; /* Bật flexbox */
+        flex-direction: column; /* Xếp logo và icon theo chiều dọc */
+        align-items: center; /* Căn giữa chúng theo chiều ngang */
         margin-bottom: 20px;
     }
    .socials-overlay {
-        position: absolute; 
+        position: absolute; /* Dòng này rất quan trọng: đưa về vị trí bình thường */
         bottom: auto;
         left: auto;
-        transform: none; 
+        transform: none; /* Bỏ transform để tránh xung đột */
         display: flex;
         gap: 15px;
-        justify-content: center;
+        justify-content: center; /* Căn giữa các icon */
     }
   
 
@@ -638,7 +648,7 @@ body {
   .navbar {
         display: none;
         position: absolute;
-        top: 60px; 
+        top: 60px; /* Đặt dưới header */
         left: 0;
         width: 100%;
         background: linear-gradient(to right, #007BFF, #87CEEB); 
@@ -656,18 +666,18 @@ body {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    
+    /* Chỉnh sửa các phần tử chính */
     .san-pham h2, .gioi-thieu h2 {
         font-size: 2rem;
     }
     
     .card-container {
-       
+        /* Chuyển từ lưới sang hiển thị 1 cột */
         grid-template-columns: 1fr;
     }
 
     .gioi-thieu-content {
-       
+        /* Hiển thị nội dung giới thiệu theo chiều dọc */
         flex-direction: column;
     }
 
@@ -675,10 +685,10 @@ body {
         width: 100%;
     }
 
-  
+    /* Chỉnh sửa footer */
     footer {
         flex-direction: column;
-        align-items: center; 
+        align-items: center; /* Căn giữa toàn bộ phần tử con */
         padding: 40px 20px;
     }
     
@@ -687,7 +697,7 @@ body {
         text-align: center;
     }
     .social-links, .contact-info {
-        justify-content: center; 
+        justify-content: center; /* Căn giữa nội dung trên điện thoại */
         text-align: center;
     }
 
@@ -698,10 +708,3 @@ body {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
