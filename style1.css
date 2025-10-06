@@ -363,6 +363,21 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .social-links {
+        display: flex;
+        justify-content: center; 
+        width: 100%; 
+        gap: 15px; 
+    }
+
+    
+    .socials-overlay {
+        display: flex;
+        justify-content: center;
+        position: static; 
+        width: 100%;
+        gap: 15px;
+    }
     .image-wrapper {
         width: 90%;
         margin-bottom: 20px;
@@ -708,3 +723,4 @@ body {
         width: 100%;
     }
 }
+
